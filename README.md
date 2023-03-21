@@ -8,14 +8,15 @@
 [] Colour facets
 [x] Custom Ranking
 [x] Federated Search (multiple indices)
-[] Sorts
+[x] Sorts
 [x] Geo-location
 [] Facets - Bonus*Dynamic Facets
 [] Rules - Bonus*Banners/Redirects
 [x] Mock Personalization
 [] Query Suggestions
 [x] Insights Events
-[] Utilize FIG to mock event data
-[] Recommend
+[x] Utilize FIG to mock event data
+[x] Recommend
 [] *QCat
-[] PDP ?
+[x] PDP ?
+[x] Category page w/ per category facet values

@@ -1,19 +1,19 @@
 import { useContext } from 'react';
 import { HierarchicalMenu, RefinementList } from 'react-instantsearch-hooks-web';
 import Geoloc from './Geoloc';
-import { IndexContext } from '../App';
+import { IndexContext } from '../index';
 import Sorts from './Sorts';
 
 
 function Sidebar(props) {
 
-  const { index } = useContext(IndexContext);
+  const index = props.activeIndex;
 
   return (
     <aside className="col-span-1">
 
-      <Sorts/>
-
+      <Sorts activeIndex={index} setIndex={props.setIndex}/>
+      
       {index.includes('federated_ecomm_PRODUCTS') && 
       <>
       <Geoloc userIP={props.activeUser} updateUserIP={props.setIP} />
@@ -37,10 +37,7 @@ function Sidebar(props) {
       </>
       }
 
-      {index === 'federated_ecomm_ARTICLES' &&
-      <>
-      </>
-      }
+
 
     </aside>
   )

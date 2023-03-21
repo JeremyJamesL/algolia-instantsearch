@@ -12,8 +12,8 @@ export function Stats(props) {
   } = useStats(props);
 
   return (
-    <span>
-        {nbHits} results processed in 0.0{processingTimeMS}s
+    <span className='mr-3'>
+        <span className='font-semibold'>{nbHits}</span> results processed in <span className='font-semibold'>0.0{processingTimeMS}s</span>
     </span>
 
   );
